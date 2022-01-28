@@ -6,10 +6,9 @@ body {
 }
 div.contenue{
     background-color: white;
-    margin: 0px 10% 50px 10%;
-    padding: 30px;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 30px 30px 30px;
     padding-top: 0px;
-    min-width: 350px;
     margin-top: 30px;
 
 }
@@ -55,6 +54,7 @@ div.separateur{
 }
 div.info{
     position: relative;
+    display: inline-block;
 }
 table.info{
     position: absolute;
@@ -62,11 +62,11 @@ table.info{
     width: 100%;
     color: white;
     background-color: #6C829DC0;
-    height: 15%;
+    height: 10px;
 }
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
     font-weight: bold;
     padding-bottom: 5px;
@@ -74,7 +74,7 @@ table.info td{
 }
 table.info th{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: bottom;
     padding-bottom: 20px;
     font-weight: bold; 
@@ -82,7 +82,6 @@ table.info th{
 img.info{
     display: block;
     object-fit: cover;
-    min-height: 200px;
     background-color: lightgrey;
 }
 div.colonne{
@@ -90,12 +89,12 @@ div.colonne{
     width: 45%;
 }
 div.colonne1{
-    display: inline-block;
+    display: inline;
     margin-right: 10%;
 
 }
 div.colonne2{
-    float: right;
+    display: inline;
 
 }
 div.colonne h2{
@@ -138,4 +137,34 @@ table.preparation tr {
 }
 div.position{
     overflow: auto;
+}
+
+@media only screen and (min-width: 768px){
+    div.contenue{
+        min-width: 350px
+    }
+}
+@media only screen and (min-width: 768px){
+    table.info{
+        height: 15%;
+    }
+    table.info td{
+        font-size: 16px;
+
+    }
+    table.info th{
+        font-size: 16px;
+    }
+    div.colonne1{
+        display: inline-block;
+    }
+    div.colonne2{
+        float: right;
+    }
+}
+@media only screen and (min-width: 900px){
+    div.contenue{
+        margin: auto;
+        max-width: 850px;
+    }
 }
